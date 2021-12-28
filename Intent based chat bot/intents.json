@@ -1,0 +1,151 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "Is anyone there?","Hey","Hola", "Hello", "Good day", "Hi","whatsup","how have you been"],
+         "responses": ["Hello","Hey", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "salutation1",
+         "patterns": ["Good Morning","morning"],
+         "responses": ["Good Morning to you too!","Indeed a very Good morning"],
+         "context_set": ""
+        },
+        {"tag": "salutation2",
+         "patterns": ["Good Night","sweet derams"],
+         "responses": ["Good Night to you too! Sweet Dreams","Take Care!!"],
+         "context_set": ""
+        },
+        {"tag": "stopwords",
+         "patterns": ["i", "me", "my", "myself", "we", "our", "ours", "ourselves", "you", "you're", "you've", "you'll", "you'd", "your", "yours", "yourself", "yourselves", "he", "him", "his", "himself", "she", "she's", "her", "hers", "herself", "it", "it's", "its", "itself", "they", "them", "their", "theirs", "themselves", "what", "which", "who", "whom", "this", "that", "that'll", "these", "those", "am", "is", "are", "was", "were", "be", "been", "being", "have", "has", "had", "having", "do", "does", "did", "doing", "a", "an", "the", "and", "but", "if", "or", "because", "as", "until", "while", "of", "at", "by", "for", "with", "about", "against", "between", "into", "through", "during", "before", "after", "above", "below", "to", "from", "up", "down", "in", "out", "on", "off", "over", "under", "again", "further", "then", "once", "here", "there", "when", "where", "why", "how", "all", "any", "both", "each", "few", "more", "most", "other", "some", "such", "no", "nor", "not", "only", "own", "same", "so", "than", "too", "very", "s", "t", "can", "will", "just", "don", "don't", "should", "should've", "now", "d", "ll", "m", "o", "re", "ve", "y", "ain", "aren", "aren't", "couldn", "couldn't", "didn", "didn't", "doesn", "doesn't", "hadn", "hadn't", "hasn", "hasn't", "haven", "haven't", "isn", "isn't", "ma", "mightn", "mightn't", "mustn", "mustn't", "needn", "needn't", "shan", "shan't", "shouldn", "shouldn't", "wasn", "wasn't", "weren", "weren't", "won", "won't", "wouldn", "wouldn't"],
+         "responses": ["Sorry, I am not able to understand. Would you like to put up a proper sentence?"],
+         "context_set": ""
+        },
+        {"tag": "salutation3",
+         "patterns": ["Good Evening"],
+         "responses": ["Very Good Evening to you too!"],
+         "context_set": ""
+        },
+        {"tag": "wellbeing",
+         "patterns": ["How are you?", "How are you doing?", "How have you been"],
+         "responses": ["I am good, thank you! Hope you are doing good too!", "I am doing fine! What about you?"],
+         "context_set": ""
+        },
+        {"tag": "age",
+         "patterns": ["how old", "how old is ELIZA", "what is your age", "how old are you", "age?"],
+         "responses": ["I am timeless", "Age is just a number","Not sure, but I am young and beautiful"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day. Take care.", "Bye! Come back again soon.","It was nice meeting you","It was a please talking to you"],
+         "context": [""]
+        },
+        {"tag": "misc",
+         "patterns": ["ok", "Eliza", "k", "okay", "ok eliza bye","alright","alright Eliza"],
+         "responses": ["Great","Thanks for your time","Hope I could help"],
+         "context": [""]
+        },
+        {"tag": "name",
+         "patterns": ["what is your name", "what should I call you", "whats your name?","name","your name","who are you","who's this","who am i talking to","what are you"],
+         "responses": ["You can call me ELIZA.", "I'm ELIZA!. How can I assist you?", "My name is ELIZA, your virtual assistant"],
+         "context_set": ""
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure","Thank you"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["It seems you are yet to type", "Please provide me more info", "The input is blank. Please share a valid input"],
+         "context": [""]
+        },
+        {"tag": "services",
+         "patterns": ["How you could help me?", "What help you provide?", "How you can be helpful?", "what services you provide","what are your services"],
+         "responses": ["I can assit you with appointments, orders, contact details of departements in our organization. Please let us know your desired service category."],
+         "context": [""]
+        },
+        {"tag": "Appointments",
+         "patterns": ["Appointments","Appointment","app"],
+         "responses": ["Sure. We require a few details, so that we can make an appointment. Please share the department and name and designation of the person you want to meet"],
+         "context": [""]
+        },
+        {"tag": "Appointments1",
+         "patterns": ["I have an appointment","my appointment","appointment fixed"],
+         "responses": ["Sure. Please allow me a monemnt to fetch the details of your appointment and reconfirm the same."],
+         "context": [""]
+        },
+        {"tag": "Orders",
+         "patterns": ["order","my order","ordered","I have placed an order"],
+         "responses": ["Please share your order id and phone number. We have share the details through an sms over the phone."],
+         "context": [""]
+        },
+        {"tag": "Orders1",
+         "patterns": ["orderid","1234567890","phone no.1234567890","order id-0123456789"],
+         "responses": ["Thank you for sharing the details. We shall share the order update shortly."],
+         "context": [""]
+        },
+        {"tag": "Orders2",
+         "patterns": ["I would like to place na order","I want to place an order","place order","want to order","ordering"],
+         "responses": ["Thank you for you interest in our products. For sales related query please reach out to email: sales@abc.com and phone: 0324-123456. A sales representative will get in touch with you within 24 hours."],
+         "context": [""]
+        },
+        {"tag": "Contactdetails",
+         "patterns": ["contact","contact details","emailid","email id","email","phone number"],
+         "responses": ["Please let us know the department you would like to get in touch with"],
+         "context": [""]
+        },
+        {"tag": "Contactdetails1",
+         "patterns": ["sales department","sales"],
+         "responses": ["For sales departemnt please reach out at email: sales@abc.com and phone: 0324-123456"],
+         "context": [""]
+        },
+        {"tag": "Contactdetails2",
+         "patterns": ["procurement department","procurement"],
+         "responses": ["For procurement departemnt please reach out at email: proc@abc.com and phone: 0324-1234567"],
+         "context": [""]
+        },
+        {"tag": "Contactdetails3",
+         "patterns": ["Human Resource department","Human Resource","HR"],
+         "responses": ["For HR departemnt please reach out at email: HR@abc.com and phone: 0324-12345678"],
+         "context": [""]
+        },
+        {"tag": "order_tracking",
+             "patterns": ["where is order with id 431B67?", "track order 562B78", "Where is my order with id 561A24?","order status","why is order delayed","when will i receive my order" ],
+         "responses": ["Dear Customer, Please logon to our website www.abc.com to track you orders. You can view the current state and location of your order in transit with the help of order id."],
+         "context": [""]
+        },
+        {"tag": "order_components",
+         "patterns": ["order id 345A23 comprises of?","List of components"],
+         "responses": ["Dear customer, please logon to www.abc.com. In the 'My orders' section you can view the order details"],
+         "context": [""]
+        },
+       {"tag": "missing_id",
+         "patterns": ["where is the order","where is my order","locate the order","Delivery date of order","why order delay","order delayed","why is my order delayed"],
+         "responses": ["Dear customer, Aplogies for the inconvinence. Please share the order ID. We shall check and get back with an order update shortly."],
+         "context": [""]
+        },
+        {"tag": "Location",
+         "patterns": ["where is company located","where is brach located","where can i visit the company","location"],
+         "responses": ["Our registered office is in Mumbai. However we have our branches over the major cities in India like Delhi,Indore,Dehradun,Punjab,Lucknow,Guwahati,Kota,Jaipur,Chennai, Bangalore, Patna. Please confirm which ocation would you prefer visiting."],
+         "context": [""]
+        },
+        {"tag": "Location1",
+         "patterns": ["Delhi","Indore","Dehradun","Punjab","Lucknow","Guwahati","Kota","Jaipur","Chennai","Bangalore","Patna"],
+         "responses": ["The address for your preferred location is- ABC Traders, 9- Ima House, Near Global Academy, City, State- Pin"],
+         "context": [""]
+        }, 
+        {"tag": "search_department",
+         "patterns": ["I want to know the various departments in this company"],
+         "responses": ["The department are:Sales,Marketing,Human Resuource,Procuremnt,IT,Production"],
+         "context": [""]
+        },
+        {"tag": "customer_satisfaction",
+         "patterns": ["The service is good","5 star","i liked the service","i am satified with the service", "I like the product", "the produdct is good","4 star"],
+         "responses": ["Thank you for your feedback. Hope to keep serving you in future.","Glad we are able to serve you satisfactorily. Thanks you for your feedback"],
+         "context": [""]
+        },
+        {"tag": "Weather",
+         "patterns": ["what is the weather today?","weather","tempearture","tell me about the weather"],
+         "responses": ["The weather today is Sunny and the temperature is 18 degree celcius.","The weather today is partly cloudy and temperature is 15 degree celcius. There is a possibilty of rainfall during the night","Teh weaher is cold today and the temperate is 10 degree celcius.","The weather is stormy today and there are indications of thunder and wind storm. Please stay indoors and stay safe"],
+         "context": [""]
+        }]}
